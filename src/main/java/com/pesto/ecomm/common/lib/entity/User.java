@@ -26,7 +26,7 @@ import java.util.UUID;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "user_id", length = 36)
     private volatile String userId = UUID.randomUUID().toString();
 

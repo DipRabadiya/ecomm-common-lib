@@ -34,7 +34,7 @@ import java.util.UUID;
 public class Order {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "order_id", length = 36)
     private volatile String orderId = UUID.randomUUID().toString();
 
