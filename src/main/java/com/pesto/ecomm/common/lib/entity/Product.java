@@ -27,7 +27,8 @@ import java.util.UUID;
 public class Product {
 
     @Id
-    @Column(name = "product_id", columnDefinition = "uniqueidentifier")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "product_id", length = 36)
     private volatile String productId = String.valueOf(UUID.randomUUID());
 
     @Column(name = "name")

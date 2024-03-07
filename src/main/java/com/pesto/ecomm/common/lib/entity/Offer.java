@@ -29,7 +29,6 @@ public class Offer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "offer_id", length = 36)
-//    private volatile String offerId = String.valueOf(UUID.randomUUID());
     private volatile String offerId = UUID.randomUUID().toString();
 
     @ManyToOne(fetch = FetchType.EAGER)
