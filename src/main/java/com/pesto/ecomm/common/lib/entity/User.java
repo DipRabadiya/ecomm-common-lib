@@ -28,7 +28,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "user_id", length = 36)
-    private volatile String userId = String.valueOf(UUID.randomUUID());
+    private volatile String userId = UUID.randomUUID().toString();
 
     @Column(name = "user_name")
     private String userName;
