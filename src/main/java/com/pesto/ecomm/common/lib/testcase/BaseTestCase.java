@@ -9,7 +9,5 @@ public class BaseTestCase {
     void init_mocks() {
         MockitoAnnotations.initMocks(this);
     }
-
-
 }
 
