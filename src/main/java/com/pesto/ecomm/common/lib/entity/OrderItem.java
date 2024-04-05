@@ -30,8 +30,9 @@ import java.util.UUID;
 public class OrderItem {
 
     @Id
-    @Column(name = "order_item_id", columnDefinition = "uniqueidentifier")
-    private volatile String orderItemId = String.valueOf(UUID.randomUUID());
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "order_item_id", length = 36)
+    private volatile String orderItemId = UUID.randomUUID().toString();
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnore

@@ -27,8 +27,9 @@ import java.util.UUID;
 public class Offer {
 
     @Id
-    @Column(name = "offer_id", columnDefinition = "uniqueidentifier")
-    private volatile String offerId = String.valueOf(UUID.randomUUID());
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "offer_id", length = 36)
+    private volatile String offerId = UUID.randomUUID().toString();
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JsonIgnore

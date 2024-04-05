@@ -60,7 +60,7 @@
         <repository>
             <id>github</id>
             <name>Ecommerce POC Common Libraries</name>
-            <url>https://maven.pkg.github.com/vimal-prabhakaran/ecomm-common-lib</url>
+            <url>https://maven.pkg.github.com/DipRabadiya/ecomm-common-lib</url>
         </repository>
     </distributionManagement>
 </project>
