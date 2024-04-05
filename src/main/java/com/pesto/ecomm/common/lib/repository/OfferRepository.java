@@ -17,7 +17,6 @@ public interface OfferRepository extends JpaRepository<Offer, String> {
     Page<Offer> findBySeller_UserIdEqualsOrderByProduct(String sellerId, Pageable pageable);
 
     List<Offer> findByProduct_ProductId(String productId);
-    @Query("select * from Offer  where seller=:seller and product=:product")
-    Offer findBySeller_UserIdAndProduct_ProductId(User seller, Product product);
 
+    Offer findBySeller_UserIdAndProduct_ProductId(String sellerId, String productId);
 }
